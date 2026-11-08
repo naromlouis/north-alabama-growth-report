@@ -107,3 +107,45 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
   .topic-carousel { padding: 22px; }
   .topic-slides, .topic-card { min-height: 310px; }
 }
+
+/* NAGR reporting leads; the existing Briefing Room remains a separate source roundup. */
+.preview-notice { padding: 12px 24px; background: var(--accent); color: var(--on-accent); font-size: 13px; line-height: 1.5; text-align: center; }
+.reporting-section { border-bottom: 1px solid var(--line); }
+.reporting-intro { max-width: 760px; margin-bottom: 32px; }
+.report-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.report-card { display: flex; flex-direction: column; min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.report-image-link { display: block; line-height: 0; }
+.report-thumbnail { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.report-card-body { display: flex; flex: 1; flex-direction: column; padding: 25px; }
+.report-kicker { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.report-kicker .tag { font-size: 10px; }
+.report-angle { padding: 4px 8px; border-radius: 20px; background: var(--panel); color: var(--ink); font-size: 10px; }
+.report-card h3 { font: 400 27px/1.15 Georgia, serif; letter-spacing: -.025em; margin: 20px 0 14px; }
+.report-card h3 a { text-decoration: none; }
+.report-card h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.report-card p { color: var(--muted); line-height: 1.6; margin: 0 0 24px; }
+.report-read { margin-top: auto; color: var(--accent); font-size: 14px; font-weight: 750; text-underline-offset: 3px; }
+.story { overflow: hidden; }
+.story-thumbnail { display: block; flex-shrink: 0; width: calc(100% + 50px); max-width: none; height: auto; aspect-ratio: 16 / 9; object-fit: cover; margin: -25px -25px 24px; }
+.report-page { max-width: 1100px; padding-top: 36px; }
+.report-back { color: var(--accent); font-size: 14px; font-weight: 700; text-underline-offset: 3px; }
+.report-header { display: block; padding: 0; border: 0; margin: 40px auto; max-width: 850px; }
+.report-header h1 { font: 400 clamp(2.5rem, 5.3vw, 4.5rem)/1.08 Georgia, serif; letter-spacing: -.04em; margin: 24px 0; }
+.report-deck { color: var(--muted); font-size: 22px; line-height: 1.5; }
+.report-byline { font-size: 13px; color: var(--muted); }
+.report-visual { margin: 32px auto; }
+.report-visual img { display: block; width: 100%; height: auto; border-radius: 12px; }
+.report-visual figcaption { margin-top: 10px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+.report-copy { max-width: 760px; margin: 40px auto 64px; }
+.report-copy > p, .report-perspective > p { font-size: 18px; line-height: 1.8; }
+.report-copy h2 { font: 400 30px/1.2 Georgia, serif; letter-spacing: -.025em; }
+.report-perspective { background: var(--panel); padding: 24px; border-radius: 12px; margin: 36px 0; }
+.report-perspective h2 { margin-top: 0; }
+.report-perspective .report-perspective-label { font: 800 11px/1.4 system-ui, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.report-perspective p:last-child { margin-bottom: 0; }
+.report-sources { border-top: 1px solid var(--line); padding-top: 20px; }
+.report-sources ul { padding-left: 20px; }
+.report-sources li { margin: 12px 0; font-size: 14px; line-height: 1.6; }
+.report-attribution { color: var(--muted); font-size: 12px; line-height: 1.6; }
+@media (max-width: 1000px) { .report-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .report-grid { grid-template-columns: 1fr; } .report-deck { font-size: 19px; } }
