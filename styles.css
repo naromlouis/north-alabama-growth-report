@@ -94,7 +94,6 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .topic-dot { display: grid; place-items: center; width: 24px; height: 24px; border: 0; padding: 0; background: transparent; cursor: pointer; }
 .topic-dot::before { content: ''; width: 6px; height: 6px; border: 1px solid var(--accent); border-radius: 50%; }
 .topic-dot[aria-pressed="true"]::before { background: var(--accent); width: 9px; height: 9px; }
-.topic-curation { margin: 8px 0 0; color: var(--muted); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; text-align: center; }
 .topic-fallback { padding: 20px 0; }
 .topic-fallback h3 { font: 400 30px/1.2 Georgia, serif; }
 .topic-fallback a { color: var(--accent); }
