@@ -25,6 +25,19 @@ export function mountCarousel(root, topics, env = window) {
     card.setAttribute('role', 'group');
     card.setAttribute('aria-roledescription', 'slide');
     card.setAttribute('aria-label', `${position + 1} of ${selected.length}: ${topic.title}`);
+    const graphic = make('img', 'topic-graphic');
+    const fallbackGraphic = '/assets/carousel/default.svg';
+    graphic.src = typeof topic.image === 'string' && /^\/assets\//.test(topic.image)
+      ? topic.image : fallbackGraphic;
+    graphic.alt = typeof topic.imageAlt === 'string' ? topic.imageAlt : '';
+    graphic.width = 1200; graphic.height = 675;
+    graphic.loading = position === 0 ? 'eager' : 'lazy';
+    graphic.decoding = 'async';
+    let usedFallback = graphic.src === fallbackGraphic;
+    graphic.addEventListener('error', () => {
+      if (!usedFallback) { usedFallback = true; graphic.src = fallbackGraphic; }
+    });
+    card.append(graphic);
     card.append(make('p', 'topic-category', topic.category || 'In focus'),
       make('h3', 'topic-title', topic.title), make('p', 'topic-description', topic.description));
     const link = make('a', 'topic-link', (topic.linkLabel || 'Explore the topic') + ' ↗');
