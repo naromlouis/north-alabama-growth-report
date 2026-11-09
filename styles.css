@@ -78,14 +78,14 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .topic-heading .eyebrow { font-size: 10px; margin: 0 0 8px; }
 .topic-heading h2 { font-family: Georgia, serif; font-size: 26px; letter-spacing: -.03em; margin: 0; font-weight: 400; }
 .topic-counter { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.topic-slides { min-height: 280px; }
+.topic-slides { min-height: 0; }
 .topic-slides:empty { display: none; }
-.topic-card { display: flex; flex-direction: column; min-height: 280px; padding: 25px 0 20px; }
+.topic-card { display: flex; flex-direction: column; min-height: 0; padding: 25px 0 20px; }
 .topic-card[hidden], .topic-controls[hidden] { display: none; }
 .topic-category { color: var(--accent); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 18px; font-weight: 800; }
 .topic-title { font: 400 clamp(1.8rem, 3vw, 2.5rem)/1.12 Georgia, serif; letter-spacing: -.035em; margin: 0 0 16px; overflow-wrap: anywhere; }
-.topic-description, .topic-fallback p { color: var(--muted); font-size: 15px; line-height: 1.6; margin: 0 0 20px; }
-.topic-link { color: var(--accent); font-size: 13px; line-height: 1.5; font-weight: 750; margin-top: auto; text-underline-offset: 3px; }
+.topic-description, .topic-fallback p { color: var(--muted); font-size: 15px; line-height: 1.6; margin: 0 0 12px; }
+.topic-link { color: var(--accent); font-size: 13px; line-height: 1.5; font-weight: 750; margin-top: 0; text-underline-offset: 3px; }
 .topic-navigation { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--line); padding-top: 18px; }
 .topic-navigation button { width: 44px; min-height: 44px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--accent); cursor: pointer; font-size: 20px; }
 .topic-navigation .topic-toggle { width: auto; padding: 0 18px; font-size: 12px; font-weight: 750; border-radius: 24px; }
@@ -106,7 +106,6 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 }
 @media (max-width: 480px) {
   .topic-carousel { padding: 22px; }
-  .topic-slides, .topic-card { min-height: 310px; }
 }
 
 /* NAGR reporting leads; the existing Briefing Room remains a separate source roundup. */
@@ -154,8 +153,5 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 /* Every highlight carries a replaceable, locally hosted story graphic. */
 .hero { align-items: start; }
 .topic-graphic { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; max-height: 180px; object-fit: contain; background: var(--page); border-radius: 8px; margin: 0 0 18px; }
-.topic-slides, .topic-card { min-height: 500px; }
 .topic-title { font-size: clamp(1.7rem, 2.4vw, 2rem); }
-@media (max-width: 480px) {
-  .topic-slides, .topic-card { min-height: 540px; }
-}
+
