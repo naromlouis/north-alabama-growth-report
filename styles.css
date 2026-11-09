@@ -16,7 +16,8 @@
 * { box-sizing: border-box; }
 body { margin: 0; }
 a { color: inherit; }
-header, main, footer { max-width: 1200px; margin: auto; padding: 24px; }
+/* Add 192 CSS pixels overall: 1 inch less margin on each desktop side. */
+header, main, footer { max-width: 1392px; margin: auto; padding: 24px; }
 header { display: flex; align-items: center; justify-content: space-between; gap: 24px; position: relative; border-bottom: 1px solid var(--line); }
 .logo { display: block; flex-shrink: 0; line-height: 0; border-radius: 4px; overflow: hidden; }
 .brand-mark { display: block; width: 200px; height: 84px; object-fit: cover; }
