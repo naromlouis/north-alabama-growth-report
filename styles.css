@@ -86,12 +86,12 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .topic-title { font: 400 clamp(1.8rem, 3vw, 2.5rem)/1.12 Georgia, serif; letter-spacing: -.035em; margin: 0 0 16px; overflow-wrap: anywhere; }
 .topic-description, .topic-fallback p { color: var(--muted); font-size: 15px; line-height: 1.6; margin: 0 0 12px; }
 .topic-link { color: var(--accent); font-size: 13px; line-height: 1.5; font-weight: 750; margin-top: 0; text-underline-offset: 3px; }
-.topic-navigation { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--line); padding-top: 18px; }
-.topic-navigation button { width: 44px; min-height: 44px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--accent); cursor: pointer; font-size: 20px; }
-.topic-navigation .topic-toggle { width: auto; padding: 0 18px; font-size: 12px; font-weight: 750; border-radius: 24px; }
+.topic-navigation { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--line); padding-top: 11px; }
+.topic-navigation button { width: 33px; min-height: 33px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--accent); cursor: pointer; font-size: 18px; }
+.topic-navigation .topic-toggle { width: auto; padding: 0 14px; font-size: 12px; font-weight: 750; border-radius: 24px; }
 .topic-navigation button:hover { background: var(--panel); border-color: var(--accent); }
 .topic-navigation button:disabled { opacity: .5; cursor: default; }
-.topic-dots { display: flex; flex-wrap: wrap; justify-content: center; gap: 3px; margin-top: 14px; }
+.topic-dots { display: flex; flex-wrap: wrap; justify-content: center; gap: 3px; margin-top: 7px; }
 .topic-dot { display: grid; place-items: center; width: 24px; height: 24px; border: 0; padding: 0; background: transparent; cursor: pointer; }
 .topic-dot::before { content: ''; width: 6px; height: 6px; border: 1px solid var(--accent); border-radius: 50%; }
 .topic-dot[aria-pressed="true"]::before { background: var(--accent); width: 9px; height: 9px; }
