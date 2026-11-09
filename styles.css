@@ -74,9 +74,9 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(360px, 1.1fr); gap: 56px; align-items: center; }
 .hero-intro h1 { font-size: clamp(3rem, 6.5vw, 5.4rem); }
 .topic-carousel { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 30px; box-shadow: 0 16px 40px rgb(21 62 41 / 6%); }
-.topic-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--line); padding-bottom: 20px; }
-.topic-heading .eyebrow { font-size: 10px; margin: 0 0 8px; }
-.topic-heading h2 { font-family: Georgia, serif; font-size: 26px; letter-spacing: -.03em; margin: 0; font-weight: 400; }
+.topic-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--line); padding-bottom: 20px; }
+.topic-heading .eyebrow { font-size: 12px; margin: 0; }
+.topic-heading h2 { font-family: inherit; font-size: 12px; line-height: 1.4; letter-spacing: .13em; margin: 0; font-weight: 800; text-transform: uppercase; }
 .topic-counter { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .topic-slides { min-height: 0; }
 .topic-slides:empty { display: none; }
