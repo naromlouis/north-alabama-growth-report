@@ -16,7 +16,8 @@
 * { box-sizing: border-box; }
 body { margin: 0; }
 a { color: inherit; }
-header, main, footer { max-width: 1200px; margin: auto; padding: 24px; }
+/* Add 192 CSS pixels overall: 1 inch less margin on each desktop side. */
+header, main, footer { max-width: 1392px; margin: auto; padding: 24px; }
 header { display: flex; align-items: center; justify-content: space-between; gap: 24px; position: relative; border-bottom: 1px solid var(--line); }
 .logo { display: block; flex-shrink: 0; line-height: 0; border-radius: 4px; overflow: hidden; }
 .brand-mark { display: block; width: 200px; height: 84px; object-fit: cover; }
@@ -127,7 +128,7 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .report-read { margin-top: auto; color: var(--accent); font-size: 14px; font-weight: 750; text-underline-offset: 3px; }
 .story { overflow: hidden; }
 .story-thumbnail { display: block; flex-shrink: 0; width: calc(100% + 50px); max-width: none; height: auto; aspect-ratio: 16 / 9; object-fit: cover; margin: -25px -25px 24px; }
-.report-page { max-width: 1100px; padding-top: 36px; }
+.report-page { max-width: 1292px; padding-top: 36px; }
 .report-back { color: var(--accent); font-size: 14px; font-weight: 700; text-underline-offset: 3px; }
 .report-header { display: block; padding: 0; border: 0; margin: 40px auto; max-width: 850px; }
 .report-header h1 { font: 400 clamp(2.5rem, 5.3vw, 4.5rem)/1.08 Georgia, serif; letter-spacing: -.04em; margin: 24px 0; }
